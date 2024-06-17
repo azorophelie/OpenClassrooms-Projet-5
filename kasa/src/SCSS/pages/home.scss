@@ -1,0 +1,72 @@
+* {
+    width: 1920px;
+    
+}
+
+#image-container {
+    position: relative;
+    width: 1240px; /* Largeur fixe */
+    height: 150px;
+    margin: 15px auto; /* Centrer le conteneur si nécessaire */
+    border-radius: 20px; /* Bordures arrondies */
+    overflow: hidden; /* Nécessaire pour que les bordures arrondies fonctionnent correctement */
+  }
+  
+  #banner {
+    width: 100%;
+    height : 100%;
+    display: block;
+  }
+  
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Voile sombre */
+    border-radius: 20px; /* Doit correspondre aux bordures de l'image */
+  }
+  
+  #image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    z-index: 1; /* Assurez-vous que le texte est au-dessus de l'overlay */
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px; /* Space between cards */
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the content */
+  }
+  
+  .cardImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Space between image and title */
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }

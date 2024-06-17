@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* src/components/style/_header.scss */
+* {
+  width: 1920px;
+}
+
+
+#header {
+
+ display: flex;
+ width: 1240px;
+ padding: 0;
+ margin: 0;
+ 
+ 
+}
+
+#navLinks {
+  display: flex; /* Align list items horizontally */
+  list-style-type: none; /* Remove default list bullets */
+  
+}
+
+#navLinks li {
+  margin-left: 20px; /* Adjust margin to reduce space between items */
+}
+
+#navLink {
+  color: black; /* Text color of links */
+  text-decoration: none;
+}
+
+#logo {
+  width: 100px; /* Width of the logo */
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+/* Optional: Additional styles to ensure proper alignment with the image */
+
