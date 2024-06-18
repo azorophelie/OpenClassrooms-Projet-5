@@ -14,4 +14,8 @@ const Banner  = () => {
     };
 
         
+<<<<<<< HEAD
         export default Banner;
+=======
+        export default Banner;
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35

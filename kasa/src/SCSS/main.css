@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* src/components/style/_header.scss */
+<<<<<<< HEAD
 .header {
   display: flex;
   justify-content: center;
@@ -20,10 +21,20 @@
 .navLinks {
   display: flex;
   list-style-type: none;
+=======
+* {
+  width: 1920px;
+}
+
+#header {
+  display: flex;
+  width: 1240px;
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
   padding: 0;
   margin: 0;
 }
 
+<<<<<<< HEAD
 .navLinks li {
   margin: 0 15px; /* Ajustez l'espacement entre les éléments du menu */
 }
@@ -45,15 +56,47 @@
 .logo {
   width: 150px;
   height: auto;
+=======
+#navLinks {
+  display: flex; /* Align list items horizontally */
+  list-style-type: none; /* Remove default list bullets */
+}
+
+#navLinks li {
+  margin-left: 20px; /* Adjust margin to reduce space between items */
+}
+
+#navLink {
+  color: black; /* Text color of links */
+  text-decoration: none;
+}
+
+#logo {
+  width: 100px; /* Width of the logo */
+  height: auto; /* Auto height to maintain aspect ratio */
+}
+
+/* Optional: Additional styles to ensure proper alignment with the image */
+* {
+  width: 1920px;
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 #image-container {
   position: relative;
+<<<<<<< HEAD
   width: 1240px;
   height: 150px;
   margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
+=======
+  width: 1240px; /* Largeur fixe */
+  height: 150px;
+  margin: 15px auto; /* Centrer le conteneur si nécessaire */
+  border-radius: 20px; /* Bordures arrondies */
+  overflow: hidden; /* Nécessaire pour que les bordures arrondies fonctionnent correctement */
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 #banner {
@@ -69,7 +112,11 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Voile sombre */
+<<<<<<< HEAD
   border-radius: 20px;
+=======
+  border-radius: 20px; /* Doit correspondre aux bordures de l'image */
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 #image-text {
@@ -81,15 +128,26 @@
   font-size: 24px;
   font-family: Arial, sans-serif;
   text-align: center;
+<<<<<<< HEAD
   z-index: 1;
+=======
+  z-index: 1; /* Assurez-vous que le texte est au-dessus de l'overlay */
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 .card-container {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: repeat(3, 1fr);
   gap: 20px; /* espace entre les cards */
   width: 100%;
   margin: 0 auto; /* centrer le container*/
+=======
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 20px; /* Space between cards */
+  width: 100%; /* Ensure full width */
+  margin: 0 auto; /* Center the container */
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 .card {
@@ -99,14 +157,22 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   align-items: center;
+=======
+  align-items: center; /* Center align the content */
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 .cardImage {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+<<<<<<< HEAD
   margin-bottom: 10px;
+=======
+  margin-bottom: 10px; /* Space between image and title */
+>>>>>>> 024f0e93186a9507bef3b4e2d4129f57f71a3b35
 }
 
 .cardTitle {
