@@ -7,17 +7,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; /* Ajustez la hauteur selon vos besoins */
-  background-color: #f8f9fa; /* Couleur de fond, ajustez selon vos besoins */
+  height: 100px; 
+  background-color: #f8f9fa; 
 }
 
 .navbar {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Ajustez la largeur maximale selon vos besoins */
-  justify-content: space-between; /* Espace entre le logo et le menu */
-  padding: 0 20px; /* Ajustez le padding selon vos besoins */
+  max-width: 1200px;
+  justify-content: space-between; 
+  padding: 0 20px; 
 }
 
 
@@ -30,7 +30,7 @@
 }
 
 .navLinks li {
-  margin: 0 15px; /* Ajustez l'espacement entre les éléments du menu */
+  margin: 0 15px; 
 }
 
 
@@ -46,7 +46,7 @@
 }
 
 .active {
-  text-decoration: underline !important; /* Style pour le lien actif */
+  text-decoration: underline !important; 
 }
 
 
