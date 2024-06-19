@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #image-container {
+        width: 730px;
+    }
+    .app {
+        width: 730px;
+        grid-template-columns: 1fr; /* Une colonne pleine largeur pour les appareils mobiles */
+         /* Largeur ajustée pour s'adapter aux écrans plus petits */
+        padding-top: 20px; /* Ajustement du padding pour les appareils mobiles */
+      }
+}
+

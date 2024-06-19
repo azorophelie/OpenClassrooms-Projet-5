@@ -1,21 +1,18 @@
-@charset "UTF-8";
-* {
-  width: 1920px;
-}
-
 #image-container {
   position: relative;
-  width: 1240px; /* Largeur fixe */
+  width: 1240px;
   height: 150px;
-  margin: 15px auto; /* Centrer le conteneur si nécessaire */
-  border-radius: 20px; /* Bordures arrondies */
-  overflow: hidden; /* Nécessaire pour que les bordures arrondies fonctionnent correctement */
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 #banner {
   width: 100%;
   height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #overlay {
@@ -25,7 +22,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5); /* Voile sombre */
-  border-radius: 20px; /* Doit correspondre aux bordures de l'image */
+  border-radius: 20px;
 }
 
 #image-text {
@@ -37,36 +34,36 @@
   font-size: 24px;
   font-family: Arial, sans-serif;
   text-align: center;
-  z-index: 1; /* Assurez-vous que le texte est au-dessus de l'overlay */
+  z-index: 1;
 }
 
-.card-container {
+.app {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
-  gap: 20px; /* Space between cards */
-  width: 100%; /* Ensure full width */
-  margin: 0 auto; /* Center the container */
+  grid-template-columns: repeat(3, 1fr);
+  width: 1240px;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f6f6;
+  padding: 45px;
+  box-sizing: border-box;
+  padding-top: 45px;
+  grid-row-gap: 50px;
+  grid-column-gap: 50px;
 }
 
 .card {
   background-color: #ffffff;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center align the content */
+  text-align: center; /* Pour centrer le texte */
 }
 
-.cardImage {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px; /* Space between image and title */
-}
-
-.cardTitle {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.card img {
+  width: 100%;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }/*# sourceMappingURL=home.css.map */

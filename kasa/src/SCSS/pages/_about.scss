@@ -1,0 +1,34 @@
+.accordéon {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .accordéon-header {
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .accordéon-header h3 {
+    margin: 0;
+  }
+  
+  .accordéon-icon {
+    transition: transform 0.3s;
+  }
+  
+  .accordéon-icon.open {
+    transform: rotate(180deg);
+  }
+  
+  .accordéon-content {
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }

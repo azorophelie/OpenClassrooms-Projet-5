@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* src/components/style/_header.scss */
 .header {
   display: flex;
@@ -59,6 +60,8 @@
   width: 100%;
   height: 100%;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #overlay {
@@ -112,4 +115,96 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100px;
+  filter: brightness(0) invert(1);
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #image-container {
+    width: 730px;
+  }
+  .app {
+    width: 730px;
+    grid-template-columns: 1fr; /* Une colonne pleine largeur pour les appareils mobiles */
+    /* Largeur ajustée pour s'adapter aux écrans plus petits */
+    padding-top: 20px; /* Ajustement du padding pour les appareils mobiles */
+  }
+}
+@media (min-width: 320px) and (max-width: 767.98px) {
+  .logo {
+    width: 100px;
+  }
+  .navLinks {
+    margin-top: 10px; /* Espace supplémentaire entre le logo et les liens */
+  }
+  .navLinks li {
+    margin: 0 10px; /* Réduire la marge entre les éléments de la liste */
+  }
+  #image-container {
+    width: 282px;
+  }
+  .app {
+    background-color: none;
+    width: 282px;
+    grid-template-columns: 1fr; /* Une colonne pleine largeur pour les appareils mobiles */
+    /* Largeur ajustée pour s'adapter aux écrans plus petits */
+    padding: 0;
+  }
+  .card img {
+    height: 200px;
+  }
+}
+.accordéon {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.accordéon-header {
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.accordéon-header h3 {
+  margin: 0;
+}
+
+.accordéon-icon {
+  transition: transform 0.3s;
+}
+
+.accordéon-icon.open {
+  transform: rotate(180deg);
+}
+
+.accordéon-content {
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
 }/*# sourceMappingURL=main.css.map */
