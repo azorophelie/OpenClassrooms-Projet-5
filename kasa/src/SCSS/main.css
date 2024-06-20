@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* src/components/style/_header.scss */
 .header {
   display: flex;
@@ -117,6 +116,53 @@
   border-radius: 10px;
 }
 
+.collapse-container {
+  margin: 30px auto;
+  width: 1080px;
+  overflow: hidden;
+}
+
+.collapse-title {
+  background-color: #FF6060;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-title h3 {
+  margin: 0;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+  color: white;
+}
+
+.arrow.open {
+  transform: rotate(0deg);
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.collapse-content.open {
+  max-height: 200px;
+  align-self: auto;
+  background-color: white;
+}
+
+.collapse-content p {
+  padding: 0 12px;
+  text-align: left;
+}
+
 .footer {
   background-color: #000;
   color: #fff;
@@ -145,9 +191,8 @@
   }
   .app {
     width: 730px;
-    grid-template-columns: 1fr; /* Une colonne pleine largeur pour les appareils mobiles */
-    /* Largeur ajustée pour s'adapter aux écrans plus petits */
-    padding-top: 20px; /* Ajustement du padding pour les appareils mobiles */
+    grid-template-columns: 1fr;
+    padding-top: 20px;
   }
 }
 @media (min-width: 320px) and (max-width: 767.98px) {
@@ -155,10 +200,10 @@
     width: 100px;
   }
   .navLinks {
-    margin-top: 10px; /* Espace supplémentaire entre le logo et les liens */
+    margin-top: 10px;
   }
   .navLinks li {
-    margin: 0 10px; /* Réduire la marge entre les éléments de la liste */
+    margin: 0 10px;
   }
   #image-container {
     width: 282px;
@@ -166,45 +211,10 @@
   .app {
     background-color: none;
     width: 282px;
-    grid-template-columns: 1fr; /* Une colonne pleine largeur pour les appareils mobiles */
-    /* Largeur ajustée pour s'adapter aux écrans plus petits */
+    grid-template-columns: 1fr;
     padding: 0;
   }
   .card img {
     height: 200px;
   }
-}
-.accordéon {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-
-.accordéon-header {
-  background-color: #ff6b6b;
-  color: white;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-.accordéon-header h3 {
-  margin: 0;
-}
-
-.accordéon-icon {
-  transition: transform 0.3s;
-}
-
-.accordéon-icon.open {
-  transform: rotate(180deg);
-}
-
-.accordéon-content {
-  padding: 20px;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
 }/*# sourceMappingURL=main.css.map */

@@ -5,11 +5,11 @@
     
     
       .navLinks {
-        margin-top: 10px; /* Espace supplémentaire entre le logo et les liens */
+        margin-top: 10px; 
       }
     
       .navLinks li {
-        margin: 0 10px; /* Réduire la marge entre les éléments de la liste */
+        margin: 0 10px; 
       }
       #image-container {
         width: 282px;
@@ -17,8 +17,7 @@
      .app {
         background-color: none;
         width: 282px;
-        grid-template-columns: 1fr; /* Une colonne pleine largeur pour les appareils mobiles */
-         /* Largeur ajustée pour s'adapter aux écrans plus petits */
+        grid-template-columns: 1fr; 
         padding: 0;
       }
       .card img{

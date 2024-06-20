@@ -1,34 +1,51 @@
-.accordéon {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    overflow: hidden;
-  }
+.collapse-container {
+  margin: 30px auto;
+  width: 1080px;
+  overflow: hidden
+ ;
+}
+
+.collapse-title {
+  background-color: #FF6060;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-title h3 {
+  margin: 0;
+}
+
+// Flêche vers le haut par défaut
+.arrow {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg); 
+  color: white;
+}
+
+// Flêche vers le bas quand elle est ouverte
+.arrow.open {
+  transform: rotate(0deg); 
+}
+
+.collapse-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+ 
+}
+
+.collapse-content.open {
+  max-height: 200px; 
+  align-self: auto;
+  background-color: white;
   
-  .accordéon-header {
-    background-color: #ff6b6b;
-    color: white;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .accordéon-header h3 {
-    margin: 0;
-  }
-  
-  .accordéon-icon {
-    transition: transform 0.3s;
-  }
-  
-  .accordéon-icon.open {
-    transform: rotate(180deg);
-  }
-  
-  .accordéon-content {
-    padding: 20px;
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-  }
+}
+
+.collapse-content p {
+  padding: 0 12px;
+  text-align: left; 
+}
