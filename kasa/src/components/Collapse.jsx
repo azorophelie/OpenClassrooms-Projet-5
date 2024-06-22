@@ -20,6 +20,7 @@ const Collapse = ({ title, children }) => {
         {children}
       </div>
     </div>
+    
   );
 };
 

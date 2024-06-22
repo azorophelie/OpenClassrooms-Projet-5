@@ -1,8 +1,9 @@
 .collapse-container {
-  margin: 30px auto;
-  width: 1080px;
-  overflow: hidden
- ;
+  margin: 42px auto;
+  width: 56.25vw;
+  max-width: 1080px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 
 .collapse-title {
@@ -17,6 +18,7 @@
 
 .collapse-title h3 {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;;
 }
 
 // Flêche vers le haut par défaut
@@ -47,5 +49,7 @@
 
 .collapse-content p {
   padding: 0 12px;
+  font-size: 19px;
+  font-family: 'Montserrat', sans-serif;
   text-align: left; 
 }

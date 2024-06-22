@@ -6,6 +6,7 @@ import logo from '../images/LOGO.png';
 const Header = () => {
   return (
     <header className="header" id="header">
+      <div className="navbar-wrapper">
       <nav className="navbar" id="navbar">
         <a href="index.html">
           <img src={logo} alt="Logo" className="logo" id="logo"/>
@@ -19,6 +20,7 @@ const Header = () => {
           </li>
           </ul>
       </nav>
+    </div>
     </header>
   );
 };

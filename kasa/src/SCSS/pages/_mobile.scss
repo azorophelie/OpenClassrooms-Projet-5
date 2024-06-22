@@ -1,29 +1,44 @@
 @media (min-width: 320px) and (max-width: 767.98px) {
     .logo {
-        width: 100px;
+        width: 25vw;
     }
     
     
       .navLinks {
-        margin-top: 10px; 
+        margin-top: 1rem; 
       }
     
       .navLinks li {
-        margin: 0 10px; 
+        margin: 0 1rem; 
       }
       #image-container {
-        width: 282px;
+        width: 80vw; 
+    max-width: 500px;
+     }
+     #image-text {
+      font-size: 25px;
+      text-align: left;
+      left: 37%;
+      
      }
      .app {
-        background-color: none;
-        width: 282px;
+        background-color: transparent;
+        width: 80vw; 
+    max-width: 500px;
         grid-template-columns: 1fr; 
         padding: 0;
       }
       .card img{
-        height: 200px;
+        height: auto;
+    max-height: 200px;
+      }
+      .collapse-container {
+        width: 80vw; 
+    max-width: 500px;
       }
 
+      .footer p {
+        white-space: pre-line;
+      }
       
-    
 }

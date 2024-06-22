@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../images/Banner_a_propos.png';
+import AboutBanner from '../components/AbouBanner';
 
 import Styles from '../SCSS/main.scss';
 import Collapse from '../components/Collapse';
@@ -7,15 +7,8 @@ import Collapse from '../components/Collapse';
 
 const About = () => (
   <div className={Styles.about}>
-  <div className="container" id="image-container">
-      <img src={image} alt="banner" className="banner" id="banner" />
-  <div className="container">
-        <img src="/path/to/banner.jpg" alt="banner" className="banner" id="banner" />
-        
-      </div>
+    <AboutBanner />
 
-     
-    </div>
     <div>
       <Collapse title="Fiabilité">
         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et 
