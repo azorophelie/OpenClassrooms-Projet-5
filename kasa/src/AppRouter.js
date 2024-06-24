@@ -3,10 +3,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import Home from './pages/home'; 
 import About from './pages/About'; 
-import ErrorPage from './pages/ErrorPage';
+import ErrorPage from './pages/errorPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import FicheLogement from './pages/FicheLogement';
+import PropertyDetails from './pages/propertyDetails';
 
 
 const AppRouter = () => {
@@ -15,7 +15,7 @@ const AppRouter = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/property/:id" element={<FicheLogement />} />
+        <Route path="/property/:id" element={<PropertyDetails />} />
         <Route path="/about" element={<About />} /> 
         <Route path="*" element={<ErrorPage />} /> 
        

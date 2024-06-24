@@ -1,6 +1,8 @@
+// src/SCSS/components/slider.scss
+
 .slider {
     position: relative;
-    width: 65vw;;
+    width: 80vw;;
     max-width: 1240px; 
     margin: auto;
   }
@@ -10,9 +12,9 @@
     height: 500px;
     border-radius: 8px;
     object-fit: cover;
-    
   }
-  
+
+  // Bouton Carrousel suivant et précédent
   .slider-button {
     position: absolute;
     top: 50%;
@@ -20,7 +22,6 @@
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-    
   }
   
   .prev-button,
@@ -30,6 +31,8 @@
     color: white;
     font-size: 80px;
     padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
     cursor: pointer;
     transition: transform 0.3s ease; 
 }
@@ -39,15 +42,16 @@
   transform: scale(1.2); 
 }
   
-  .slider-number {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color:transparent;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 16px;
+// Numérotation des images du Carrousel
+.slider-number {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:transparent;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 16px;
   }
   

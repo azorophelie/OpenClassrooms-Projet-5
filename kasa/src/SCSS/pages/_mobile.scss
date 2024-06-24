@@ -1,44 +1,115 @@
 @media (min-width: 320px) and (max-width: 767.98px) {
-    .logo {
-        width: 25vw;
-    }
-    
-    
-      .navLinks {
-        margin-top: 1rem; 
-      }
-    
-      .navLinks li {
-        margin: 0 1rem; 
-      }
-      #image-container {
-        width: 80vw; 
+  // Header pour version mobile
+  .header {
+    width: 80vw;
     max-width: 500px;
-     }
-     #image-text {
-      font-size: 25px;
-      text-align: left;
-      left: 37%;
-      
-     }
-     .app {
-        background-color: transparent;
-        width: 80vw; 
-    max-width: 500px;
-        grid-template-columns: 1fr; 
-        padding: 0;
-      }
-      .card img{
-        height: auto;
-    max-height: 200px;
-      }
-      .collapse-container {
-        width: 80vw; 
-    max-width: 500px;
-      }
+    margin: auto;
+  }
+  
+  .logo {
+    width: 25vw;
+  }
+    
+  .navLinks {
+    margin-top: 1rem; 
+  }
+    
+  .navLinks li {
+    margin: 0 1rem; 
+  }
 
-      .footer p {
-        white-space: pre-line;
-      }
+  // Bannière Home et A Propos
+  #image-container {
+    width: 80vw; 
+    max-width: 500px;
+  }
+
+  #image-text {
+    font-size: 25px;
+    text-align: left;
+    left: 37%;
+  }
+
+  // Cards pour version mobile
+  .app {
+    background-color: transparent;
+    width: 80vw; 
+    max-width: 500px;
+    grid-template-columns: 1fr; 
+    padding: 0;
+  }
+
+  .card img{
+    height: auto;
+    max-height: 200px;
+  }
       
+  // Collapse A propos version mobile
+  .collapse-container {
+    width: 80vw; 
+    max-width: 500px;
+  }
+
+  // Carrousel pour la fiche de logement version mobile
+  .slider {
+    width: 80vw;
+    max-width: 520px; 
+  }
+
+  .slider-image {
+    height: 400px;
+  }
+
+  // Informations des logements pour la version mobile
+  .property-main-info {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .property-tags {
+    margin-bottom: 0;
+  }
+
+  .tag {
+    margin-bottom: 10px;
+  }
+  
+  // Informations de l'hôte avec note
+  .logement-host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin:auto;
+    width: 80vw;
+    max-width: 500px;
+    }
+     
+  .logement-rating .star {
+    margin: 0;      
+  }
+      
+  // Description et Equipements
+  .description-equipments {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 500px;
+    margin: auto;
+    gap: 5px;
+  }
+
+  .description, .equipments {
+    width: 80vw;
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+
+  // Footer
+  .footer p {
+    white-space: pre-line;
+  }
+     
 }

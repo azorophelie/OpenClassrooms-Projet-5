@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header" id="header">
       <div className="navbar-wrapper">
       <nav className="navbar" id="navbar">
-        <a href="index.html">
+        <a href="/">
           <img src={logo} alt="Logo" className="logo" id="logo"/>
         </a>
         <ul className="navLinks">

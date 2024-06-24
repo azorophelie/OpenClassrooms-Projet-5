@@ -1,3 +1,5 @@
+// src/SCSS/pages/about.scss
+
 .collapse-container {
   margin: 42px auto;
   width: 56.25vw;
@@ -21,14 +23,14 @@
   font-family: 'Montserrat', sans-serif;;
 }
 
-// Flêche vers le haut par défaut
+// Flêche vers le haut par défaut pour les collaspse de a propos et logement
 .arrow {
   transition: transform 0.3s ease;
   transform: rotate(180deg); 
   color: white;
 }
 
-// Flêche vers le bas quand elle est ouverte
+// Flêche vers le bas quand elle est ouverte pour les collaspse de a propos et logement
 .arrow.open {
   transform: rotate(0deg); 
 }
@@ -36,15 +38,13 @@
 .collapse-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
- 
+  transition: max-height 0.3s ease; 
 }
 
 .collapse-content.open {
   max-height: 200px; 
   align-self: auto;
   background-color: white;
-  
 }
 
 .collapse-content p {

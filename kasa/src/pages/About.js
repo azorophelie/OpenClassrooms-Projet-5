@@ -30,8 +30,6 @@ const About = () => (
         </p>
       </Collapse>
       </div>
-    
-   
   </div>
 );
 

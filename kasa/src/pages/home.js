@@ -6,9 +6,6 @@ import logementsData from '../data/logements.json';
 import Card from '../components/Cards';
 
 
-
-
-
 const Home = () => {
   return (
     <div className={Styles.home}>

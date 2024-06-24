@@ -1,15 +1,15 @@
 @charset "UTF-8";
 /* src/components/style/_header.scss */
 
-
-
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;  
   margin-bottom: 10px;
- 
+  width: 80vw;
+  max-width: 1240px; 
+  margin: auto;
 }
 
 .navbar {
@@ -22,8 +22,6 @@
 
 .logo-nav, .menu-nav {
   flex: 1;
- 
-  
 }
 
 .navbar-wrapper {
@@ -45,8 +43,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .navLinks a:hover {
   text-decoration: underline;
 }
@@ -60,8 +56,6 @@
 .active {
   text-decoration: underline !important; 
 }
-
-
 
 .logo {
   width: 150px;

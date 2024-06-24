@@ -1,18 +1,72 @@
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    #image-container {
-        width: 80vw;
-        max-width: 1024px;
-    }
-    .app {
-        width: 80vw;
-        max-width: 1024px;
-        grid-template-columns: 1fr;
-        padding-top: 20px; 
-      }
-      .collapse-container {
-        width: 80vw;
-        max-width: 1024px;
-      }
+    // Header version tablette
+  .header {
+    width: 80vw;
+    max-width: 1024px;
+    margin: auto;
+  }
+  
+  // Bannière
+  #image-container {
+    width: 80vw;
+    max-width: 1024px;
+  }
+
+  // Cards Home
+  .app {
+    background-color: transparent;
+    width: 80vw;
+    max-width: 1024px;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  // Collapse A propos
+  .collapse-container {
+    width: 80vw;
+    max-width: 1024px;
+  }
+
+  // Carrousel Fiche Logement
+  .slider {
+    width: 80vw;
+    max-width: 1024px; 
+    margin: auto;
+  }
+    
+  // Informations des logements
+  .property-main-info {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  // Informations des hôtes
+  .logement-host {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin:auto;
+    width: 80vw;
+    max-width: 1024px;
+  }
+
+  // Description et Equipement 
+  .description-equipments {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    max-width: 1024px;
+    margin: auto;
+    gap: 30px;
+  }
       
-    }
+  .description, .equipments {
+    width: 80vw;
+    
+  }
+      
+}
 
