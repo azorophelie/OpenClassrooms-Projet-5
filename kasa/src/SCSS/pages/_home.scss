@@ -30,12 +30,13 @@
   
 #image-text {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
+  align-items: center;
   z-index: 1; 
   font-family: 'montserrat', Arial, sans-serif;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;

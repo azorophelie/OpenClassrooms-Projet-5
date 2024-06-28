@@ -1,9 +1,17 @@
 // src/SCSS/pages/error.scss
 
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
 .error-page h1 {
-    font-size: 15.625vw;
+    font-size: 13vw;
     color : #ff6060;
-    margin: 0;
+    margin: 80px 0 0 0;
     font-family: montserrat;
 }
 
@@ -17,6 +25,10 @@
 
 .error-page a{
     color: black;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     font-family: montserrat;
 }
+
+
+  
+    

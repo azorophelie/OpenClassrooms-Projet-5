@@ -60,13 +60,17 @@
     width: 80vw;
     max-width: 1024px;
     margin: auto;
-    gap: 30px;
-  }
-      
-  .description, .equipments {
-    width: 80vw;
     
   }
+      
+  .property-description, .property-equipments {
+    width: 80vw;
+  }
+
+  .property-description {
+    margin-bottom: -50px; 
+  }
+ 
       
 }
 

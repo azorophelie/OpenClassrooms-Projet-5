@@ -5,8 +5,7 @@ import Ratings from '../components/Ratings';
 import Slider from '../components/Slider';
 import Property from '../components/Property';
 import HostInfo from '../components/Host';
-import Description from '../components/Description';
-import Equipments from '../components/Equipment';
+import PropertyInfo from '../components/PropertyInfo';
 import '../SCSS/main.scss';
 
 function LogementDetails() {
@@ -14,7 +13,7 @@ function LogementDetails() {
   const logement = logements.find(logement => logement.id === id);
 
   if (!logement) {
-    return <Navigate to="/error" />; // Rediriger vers la page d'erreur
+    return <Navigate to="/error" />; 
   }
 
    
@@ -35,12 +34,10 @@ function LogementDetails() {
         </div>
        
       </div>
-      <div className="description-equipments">
-      <Description description={logement.description} />
-      <Equipments equipments={logement.equipments} />
+      <PropertyInfo description={logement.description} equipments={logement.equipments} />
      </div>
     
-    </div>
+    
   );
 }
 

@@ -50,6 +50,8 @@
     max-width: 500px;
   }
 
+  
+
   // Carrousel pour la fiche de logement version mobile
   .slider {
     width: 80vw;
@@ -58,6 +60,10 @@
 
   .slider-image {
     height: 400px;
+  }
+
+  .slider-number {
+    display: none;
   }
 
   // Informations des logements pour la version mobile
@@ -98,12 +104,14 @@
     width: 80vw;
     max-width: 500px;
     margin: auto;
-    gap: 5px;
+    gap: -50px;
   }
 
-  .description, .equipments {
-    width: 80vw;
-    margin-bottom: 30px;
+  .property-description {
+    margin-bottom: -50px; /* Réduisez cette valeur pour réduire l'écart en version mobile */
+  }
+
+  .property-description, .property-equipments {
     max-width: 500px;
   }
 
@@ -112,4 +120,13 @@
     white-space: pre-line;
   }
      
+  .error-page h1 {
+    font-size: 115px;
+  }
+  
+  .error-page p {
+    font-size: 3vw;
+    white-space: pre-line;
+    text-align: center;
+  }
 }

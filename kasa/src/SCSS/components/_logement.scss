@@ -36,10 +36,6 @@
   margin-bottom: 20px;
 }
 
-.property-tags {
-  margin-bottom: 20px;
-}
-
 .tag {
   display: inline-block;
   background-color: #FF6060; 
@@ -106,55 +102,22 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 50px ; 
   max-width: 1240px;
-  gap: 90px;
-  
-  }
-
-.description{
-  width: calc(50% - 10px); 
-  max-width: 1240px;
-  overflow: hidden;
-  border-radius: 5px;
 }
 
-.description-title, .equipments-title {
-  background-color: #FF6060;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.property-description, .property-equipments {
+  width: calc(50% - 45px);
 }
 
-.description-title h2, .equipments-title h2 {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
+.property-equipments ul, .property-description p{
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
-.description p {
-  padding: 0 12px;
-  font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
-}
-
-.equipments ul {
-  padding: 0;
-}
-
-.equipments li {
-  padding: 0;
-  font-size: 19px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: left;
+.property-equipments li {
   list-style-type: none;
 }
 
-.equipments {
-  overflow: hidden;
-  border-radius: 5px;
-  width: calc(50% - 10px);
-}
+
+
+
