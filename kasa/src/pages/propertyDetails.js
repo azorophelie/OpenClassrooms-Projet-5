@@ -6,7 +6,7 @@ import Slider from '../components/Slider';
 import Property from '../components/Property';
 import HostInfo from '../components/Host';
 import PropertyInfo from '../components/PropertyInfo';
-import '../SCSS/main.scss';
+
 
 function LogementDetails() {
   const { id } = useParams();

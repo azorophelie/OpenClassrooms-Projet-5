@@ -7,7 +7,7 @@ import ErrorPage from './pages/errorPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import PropertyDetails from './pages/propertyDetails';
-
+import '../src/SCSS/main.scss';
 
 const App = () => {
   return (
@@ -18,7 +18,6 @@ const App = () => {
         <Route path="/property/:id" element={<PropertyDetails />} />
         <Route path="/about" element={<About />} /> 
         <Route path="*" element={<ErrorPage />} /> 
-       
       </Routes>
       <Footer />
     </Router>
